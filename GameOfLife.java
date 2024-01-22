@@ -32,8 +32,8 @@
 		//// Write here code that tests that the count and cellValue functions
 		//// are working properly, and returning the correct values.
 		print(board);
-		//System.out.println(count(board,2,2));
-		//System.out.println(cellValue(board,2,2));
+	System.out.println(count(board, 2, 2));
+	System.out.println(cellValue(board, 2, 2));
 	}
 		
 	// Reads the data file, plays the game for Ngen generations, 
@@ -153,13 +153,13 @@
     	for(int i=0; i< arr.length-1; i++){
     		for(int j=0; j< arr[i].length-1; j++){
 				if(j == 1) {
-					System.out.printf(" 4%s ", arr[i][j]);
+					System.out.printf("  %s", arr[i][j]);
 				}
 				else if (j == arr[i].length-2){
-					System.out.printf(" 4%s ", arr[i][j]);
+					System.out.printf(" %s", arr[i][j]);
 				}
 				else{
-					System.out.printf(" 4%s ", arr[i][j]);
+					System.out.printf(" %s", arr[i][j]);
 				}
     		}
 			System.out.println();
