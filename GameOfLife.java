@@ -32,8 +32,8 @@
 		//// Write here code that tests that the count and cellValue functions
 		//// are working properly, and returning the correct values.
 		print(board);
-		System.out.println(count(board,2,2));
-		System.out.println(cellValue(board,2,2));
+		//System.out.println(count(board,2,2));
+		//System.out.println(cellValue(board,2,2));
 	}
 		
 	// Reads the data file, plays the game for Ngen generations, 
@@ -150,9 +150,9 @@
 	
 	// Prints the board. Alive and dead cells are printed as 1 and 0, respectively.
     public static void print(int[][] arr) {
-    	for(int i=0; i< arr.length; i++){
-    		for(int j=0; j< arr[i].length; j++){
-    			System.out.print(" " + arr[i][j]);
+    	for(int i=0; i< arr.length-1; i++){
+    		for(int j=0; j< arr[i].length-1; j++){
+    			System.out.printf("%4s" , arr[i][j]);
     		}
 			System.out.println();
     	}
