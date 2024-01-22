@@ -152,7 +152,15 @@
     public static void print(int[][] arr) {
     	for(int i=0; i< arr.length-1; i++){
     		for(int j=0; j< arr[i].length-1; j++){
-    			System.out.printf("%4s" , arr[i][j]);
+				if(j == 1) {
+					System.out.printf(format:" %s ", arr[i][j]);
+				}
+				else if (j == arr[i].length-2){
+					System.out.printf(format:" %s ", arr[i][j]);
+				}
+				else{
+					System.out.printf(format:" %s ", arr[i][j]);
+				}
     		}
 			System.out.println();
     	}
